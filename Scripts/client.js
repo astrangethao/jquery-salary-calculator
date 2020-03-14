@@ -65,4 +65,8 @@ function render() {
     `);
   }
   $(".js-total-monthly").text(totalMonthly);
+
+  if (totalMonthly > 20000) {
+    $(".js-total-monthly").css("background", "red");
+  } else $(".js-total-monthly").css("background", "white");
 }
