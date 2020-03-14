@@ -10,7 +10,12 @@ function init() {
 
 function deleteEmployee() {
   console.log(this);
-  $(".js-table-body-row").remove();
+
+  const employeeIndex = $(this).data("index");
+
+  employeeForm.splice(employeeIndex, 1);
+
+  render();
 }
 
 function submitEmployeeForm(event) {
@@ -55,7 +60,7 @@ function render() {
     <td>${individualEmployee.employeeID}</td>
     <td>${individualEmployee.employeeTitle}</td>
     <td>${individualEmployee.employeeAnnualSalary}</td>
-    <td><button class="js-btn-delete">Delete</button></td>
+    <td><button class="js-btn-delete data-index="${i}">Delete</button></td>
     </tr>
     `);
   }
