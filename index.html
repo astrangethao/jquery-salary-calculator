@@ -8,5 +8,83 @@
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Ursus Salary Calculator</h1>
+    </header>
+
+    <form class="js-add-employee-form">
+      <h2>Add Employee</h2>
+      <div>
+        <input
+          class="js-input-firstName"
+          type="text"
+          placeholder="first name"
+          id="first name"
+          name="first name"
+        />
+      </div>
+      <div>
+        <input
+          class="js-input-lastName"
+          type="text"
+          placeholder="last name"
+          id="last name"
+          name="last name"
+        />
+      </div>
+      <div>
+        <input
+          class="js-input-id"
+          type="number"
+          placeholder="ID"
+          id="ID"
+          name="ID"
+        />
+      </div>
+      <div>
+        <input
+          class="js-input-title"
+          type="text"
+          placeholder="Title"
+          id="Title"
+          name="Title"
+        />
+      </div>
+      <div>
+        <input
+          class="js-input-annualSalary"
+          type="number"
+          placeholder="Annual Salary"
+          id="Annual Salary"
+          name="Annual Salary"
+        />
+      </div>
+      <div>
+        <button class="js-click-submit" type="submit">Submit</button>
+      </div>
+    </form>
+    <h2>Employees</h2>
+    <table class="js-table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+        </tr>
+      </thead>
+      <tbody class="js-table-body">
+        <tr class="js-table-body-row">
+          <td>Andrew</td>
+          <td>Nguyen</td>
+          <td>1320</td>
+          <td>Student</td>
+          <td>0.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>Total Monthly: <span class="js-total-monthly">0.00</span></div>
+  </body>
 </html>
