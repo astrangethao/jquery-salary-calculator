@@ -67,6 +67,6 @@ function render() {
   $(".js-total-monthly").text(totalMonthly);
 
   if (totalMonthly > 20000) {
-    $(".js-total-monthly").css("background", "red");
+    $(".js-total-monthly").css("background", "#fe346e");
   } else $(".js-total-monthly").css("background", "white");
 }
