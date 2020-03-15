@@ -59,14 +59,14 @@ function render() {
     <td>${individualEmployee.employeeLastName}</td>
     <td>${individualEmployee.employeeID}</td>
     <td>${individualEmployee.employeeTitle}</td>
-    <td>${individualEmployee.employeeAnnualSalary}</td>
-    <td><button class="js-btn-delete data-index="${i}">Delete</button></td>
+    <td>$${individualEmployee.employeeAnnualSalary}</td>
+    <td><button class="btn js-btn-delete data-index="${i}">Delete</button></td>
     </tr>
     `);
   }
-  $(".js-total-monthly").text(totalMonthly);
+  $(".js-total-monthly").text(`$${totalMonthly}`);
 
   if (totalMonthly > 20000) {
     $(".js-total-monthly").css("background", "#fe346e");
-  } else $(".js-total-monthly").css("background", "white");
+  } else $(".js-total-monthly").css("background", "#fffdf9");
 }
